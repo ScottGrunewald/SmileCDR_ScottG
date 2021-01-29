@@ -1,0 +1,1128 @@
+C:\Users\Linnea\.jdks\openjdk-15.0.2\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\lib\idea_rt.jar=57746:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Users\Linnea\Desktop\Dad Work\Learning\Java\SmileCDR in IntelliJ\playground-basic-master\target\classes;C:\Users\Linnea\.m2\repository\ca\uhn\hapi\fhir\hapi-fhir-base\4.2.0\hapi-fhir-base-4.2.0.jar;C:\Users\Linnea\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\Linnea\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\Linnea\.m2\repository\org\apache\commons\commons-text\1.7\commons-text-1.7.jar;C:\Users\Linnea\.m2\repository\commons-codec\commons-codec\1.12\commons-codec-1.12.jar;C:\Users\Linnea\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Linnea\.m2\repository\com\google\guava\guava\28.0-jre\guava-28.0-jre.jar;C:\Users\Linnea\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Linnea\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Linnea\.m2\repository\org\checkerframework\checker-qual\2.8.1\checker-qual-2.8.1.jar;C:\Users\Linnea\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.2\error_prone_annotations-2.3.2.jar;C:\Users\Linnea\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Linnea\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.17\animal-sniffer-annotations-1.17.jar;C:\Users\Linnea\.m2\repository\org\slf4j\slf4j-api\1.7.28\slf4j-api-1.7.28.jar;C:\Users\Linnea\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.28\jcl-over-slf4j-1.7.28.jar;C:\Users\Linnea\.m2\repository\ca\uhn\hapi\fhir\hapi-fhir-structures-r4\4.2.0\hapi-fhir-structures-r4-4.2.0.jar;C:\Users\Linnea\.m2\repository\ca\uhn\hapi\fhir\org.hl7.fhir.utilities\4.2.0\org.hl7.fhir.utilities-4.2.0.jar;C:\Users\Linnea\.m2\repository\ca\uhn\hapi\fhir\org.hl7.fhir.r4\4.2.0\org.hl7.fhir.r4-4.2.0.jar;C:\Users\Linnea\.m2\repository\org\fhir\ucum\1.0.2\ucum-1.0.2.jar;C:\Users\Linnea\.m2\repository\xpp3\xpp3\1.1.4c\xpp3-1.1.4c.jar;C:\Users\Linnea\.m2\repository\xpp3\xpp3_xpath\1.1.4c\xpp3_xpath-1.1.4c.jar;C:\Users\Linnea\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Linnea\.m2\repository\ca\uhn\hapi\fhir\hapi-fhir-client\4.2.0\hapi-fhir-client-4.2.0.jar;C:\Users\Linnea\.m2\repository\org\apache\httpcomponents\httpclient\4.5.9\httpclient-4.5.9.jar;C:\Users\Linnea\.m2\repository\org\apache\httpcomponents\httpcore\4.4.11\httpcore-4.4.11.jar;C:\Users\Linnea\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Linnea\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar" SampleClient
+16:24:30.451 INFO  ca.uhn.fhir.util.VersionUtil - HAPI FHIR version 4.2.0 - Rev 8491707942
+16:24:30.483 INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+16:24:31.717 INFO  ca.uhn.fhir.util.XmlUtil - Unable to determine StAX implementation: java.xml/META-INF/MANIFEST.MF not found
+Iteration 1
+16:24:34.992 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/metadata HTTP/1.1
+16:24:35.258 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 266ms
+16:24:35.865 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=SMITH HTTP/1.1
+16:24:36.743 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 878ms
+Alexander Smith
+Darcy Smith 1992-10-21T01:08:53.379Z
+Darcy Smith 1992-10-21T01:08:53.383Z
+Darcy Smith 1992-10-21T01:08:53.425Z
+Darcy Smith 1992-10-21T01:09:14.992Z
+Darcy Smith 1992-10-21T01:09:14.999Z
+Darcy Smith 1992-10-21T01:09:15.028Z
+Darcy Smith 1992-10-21T01:09:21.099Z
+Darcy Smith 1992-10-21T01:09:21.102Z
+Darcy Smith 1992-10-21T01:09:21.118Z
+John Smith
+John Smith
+John Smith
+John Smith
+John Smith 2001-02-20
+John\ Smith 1970-01-01
+John\ Smith 1970-01-01
+Maia Smith 2020-10-14
+Peggy Smith 2020-11-05
+jack smith 2000-11-11
+16:24:37.149 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=JONES HTTP/1.1
+16:24:37.827 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 678ms
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+16:24:37.987 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=BROWN HTTP/1.1
+16:24:39.134 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1146ms
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Asher Brown 2021-01-24
+Caitlin Brown 2020-10-23
+Daniel Brown 2000-12-01
+Hunter Brown 2020-11-03
+JamesJr Brown-Smith 1965-09-01
+Marcus Brown 1984-10-29
+Max Brown 2020-11-02
+Rasheeda241 Brown30 1980-02-13
+16:24:39.290 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=TREMBLAY HTTP/1.1
+16:24:40.017 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 727ms
+Barton704 Tremblay80 1928-11-22
+Barton704 Tremblay80 1929-01-31
+Bessie423 Shanahan202 1949-12-18
+Doloris378 Tremblay80 1948-10-09
+Loriann967 Tremblay80 2008-07-18
+Mickey576 Tremblay80 1934-05-08
+Wilson960 Tremblay80 1972-01-15
+16:24:40.080 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=MARTIN HTTP/1.1
+16:24:41.361 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1281ms
+Alejandra902 Martínez540 1995-05-17
+Aria Martin 2020-05-28
+Beau Martin 2020-05-30
+Charles Martin 2020-06-01
+Gonzalo Martínez 1991-06-20
+Jasmine Martin 2020-11-17
+Lachlan Martin 2000-05-30
+Martín25 Martínez540 1948-06-10
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Serena Martin
+Thea Martin 2020-11-23
+kavin Martin 2020-02-02
+16:24:41.470 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=ROY HTTP/1.1
+16:24:43.074 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1604ms
+Esteban536 Roybal79 1946-01-25
+Geofssf Roy 1995-05-12
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+16:24:43.183 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=GAGNON HTTP/1.1
+16:24:43.605 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 406ms
+16:24:43.605 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=LEE HTTP/1.1
+16:24:44.696 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1091ms
+Aiden Lee 2020-10-28
+Caleb Lee 1993-12-14
+Dong Goo Lee 1938-12-02
+Elijah Lee 2020-05-19
+Fletcher Lee 2000-06-01
+Ivy Leejo 2021-01-25
+Jacqueline Lee 1947-01-21
+Layla Lee 2020-11-18
+Li-Hui Lee 2003-05-01
+Phil Lee
+Phil Lee
+Phil Lee
+Phil Lee 1990-01-01
+Phil Lee 1990-01-01
+Phil Lee 1990-01-01
+Piper Lee 2020-11-20
+Sienna Lee 2013-10-22
+Ted Lee 1932-05-07
+Theo Lee 2020-10-13
+kevin lee
+16:24:44.791 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=WILSON HTTP/1.1
+16:24:46.247 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1455ms
+Alan Wilson
+Brian Wilson
+Cameron Wilson
+Carl Wilson
+Elizabeth Wilson 1978-11-13
+Elliott Wilson
+Howard Wilson
+Jacque Wilson 1990-01-01
+Jacque Wilson 1990-01-01
+Jesse Wilson 1940-07-01
+Joseph Wilson
+Maia Wilson 2020-10-29
+Michael Wilson 2020-05-22
+Perkins Wilson
+Peter Wilsontest 1955-03-01
+Ryder Wilson 2020-01-06
+Sam Wilson
+Victoria Wilson
+William Wilson
+Wilson Wilson
+16:24:46.325 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=JOHNSON HTTP/1.1
+16:24:47.583 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1258ms
+Jack Johnson 2020-12-10
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+16:24:47.642 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=MACDONALD HTTP/1.1
+16:24:49.553 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1911ms
+Adam MacDonald
+Adrian MacDonald
+Brandon MacDonald
+Brian MacDonald
+Colin MacDonald
+Connor MacDonald
+Gavin MacDonald
+Gordon MacDonald
+Ian MacDonald
+John MacDonald
+Keith MacDonald
+Lisa MacDonald
+Michael MacDonald
+Nathan MacDonald
+Owen MacDonald
+Peter MacDonald
+Piers MacDonald
+Simon MacDonald
+Tim MacDonald
+Wendy MacDonald
+16:24:49.631 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=TAYLOR HTTP/1.1
+16:24:50.786 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1155ms
+Adam Taylor
+Adrian Taylor
+Alexander Taylor
+Beau Taylor 2020-10-31
+Boris Taylor
+Brandon Taylor
+Caitlin Taylor 2020-06-07
+Daniel Taylor 1980-08-03
+Edna Taylor 1961-02-03
+Hudson Taylor 2020-06-16
+Isaac Taylor
+Jordan Taylor 2020-11-30
+Kevin Taylor
+Mark Taylor
+Mark Taylor
+Mark Taylor
+Piers Taylor
+Sebastian Taylor
+Theodore Taylor 2020-06-13
+Zara Taylor 2020-10-20
+16:24:50.853 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=CAMPBELL HTTP/1.1
+16:24:52.203 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1350ms
+Adam Campbell
+Boris Campbell
+Christopher Campbell
+Eric Campbell
+Frank Campbell
+Gavin Campbell
+Jake Campbell
+Jonathan Campbell
+Joseph Campbell
+Julian Campbell
+Justin Campbell
+Lucas Campbell
+Nathan Campbell
+Neil Campbell
+Nicholas Campbell
+Oliver Campbell
+Stephen Campbell
+Steven Campbell
+Stewart Campbell
+William Campbell
+16:24:52.278 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=ANDERSON HTTP/1.1
+16:24:52.865 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 586ms
+Alex Anderson
+Alex Anderson
+Amy Anderson 1923-12-01
+Babara869 Anderson154 1953-02-19
+Daniel Anderson 2020-12-18
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+Eden Anderson 2020-10-12
+Edward Anderson 2020-12-17
+Hunter Anderson 2020-12-11
+Jacob Anderson 2020-10-22
+James Anderson 2001-12-25
+JasmineWvh6pm AndersonWvh6pm 1989-12-23
+Kate Anderson 1975-12-25
+Michael Anderson 2010-09-25
+Xavier Anderson 2020-11-18
+16:24:52.959 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=LEBLANC HTTP/1.1
+16:24:53.365 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 406ms
+16:24:53.365 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=COTE HTTP/1.1
+16:24:53.834 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 469ms
+16:24:53.850 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=WILLIAMS HTTP/1.1
+16:24:54.615 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 765ms
+Alexis Williams 2021-01-18
+Ashton Williams 2020-10-27
+Carl Williams 2004-04-14
+Clive Williams 1954-08-08
+Dorine689 Schowalter414 1941-11-07
+Ella Williams 2020-06-09
+Ethan Williams 2020-07-28
+Ezra Williams 2020-07-22
+Fred Williamson 1954-01-01
+Harrison Williams 2020-07-08
+JOHN WILLIAMS 1973-06-17
+Jackson Williams 2000-06-09
+John Williams 1982-10-31
+Kimberlie352 Williamson769 1951-08-13
+Kimberlie352 Williamson769 1951-08-13
+Liliane Williams 1945-12-09
+Mila Williams 2020-10-14
+Modesta635 Denesik803 1970-02-19
+Oliver Williams 2018-08-05
+Suzy993 Barrows492 1955-04-17
+16:24:54.709 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=MILLER HTTP/1.1
+16:24:55.350 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 641ms
+Dollie671 Pagac496 1979-10-18
+Gerda633 Miller503 1946-09-01
+Gerda633 Miller503 1946-11-09
+Hudson Dylan
+Kylee806 Miller503 1992-01-13
+Lindsay Miller 1993-10-31
+Lynelle567 Crona259 1973-12-27
+Maria750 Miller503 1982-10-21
+Maria750 Miller503 1982-12-30
+Nancy265 Miller503 1960-04-10
+Nancy265 Smitham825 1990-01-23
+Newton741 Miller503 1921-04-29
+Newton741 Miller503 1921-07-08
+Peter Chalmers 1974-12-25
+Ruby Miller 1937-05-01
+Samuel Miller
+Samuel Miller
+Shayne60 Miller503 1965-06-29
+Tammy740 Miller503 1996-10-22
+[FILTERED] [FILTERED] 1920-06-28
+16:24:55.412 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=THOMPSON HTTP/1.1
+16:24:56.313 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 901ms
+Archie Thompson 2020-05-28
+Aria Thompson 2020-06-08
+Beckie79 Kirlin939 1983-07-27
+Blair Thompson 1994-08-31
+Candis134 Thompson596 1963-04-12
+Dillon Thompson
+Dillon Thompson
+Geri861 Thompson596 1946-12-13
+Gregory545 Thompson596 1987-02-23
+Harry Thompson 2020-10-13
+Henry Thompson 1956-09-01
+Lea264 Sporer811 1946-08-19
+Patrick Thompson 2020-06-02
+Peter Chalmers 1974-12-25
+Ronnie7 Thompson596 1968-01-22
+Rudolph554 Thompson596 1964-02-03
+Samuel Thompson 2020-05-28
+Tempie784 Lynch190 1978-11-27
+Toney527 Thompson596 2007-07-26
+Zara Thompson 2000-05-30
+16:24:56.369 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=GAUTHIER HTTP/1.1
+16:24:56.889 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 519ms
+16:24:56.892 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=WHITE HTTP/1.1
+16:24:57.524 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 631ms
+Alex White 1978-08-23
+Archer White 2001-06-05
+Codi873 White193 1989-07-07
+Codi873 White193 1989-09-15
+Concetta811 White193 1950-04-23
+Debra White 1981-01-26
+Dylan White 2020-11-29
+George White 2020-06-06
+Gonzalo160 White193 1956-12-20
+Gonzalo160 White193 1957-02-28
+Hudson White 2021-01-22
+Johanne551 White193 2000-12-14
+Johanne551 White193 2001-02-22
+Levi White 2020-10-20
+Luca White 1985-09-15
+Lucy White 2020-12-10
+Stella White 1920-06-03
+Thao506 White193 1909-10-12
+Walter White 2226-10-24
+dunght White 2019-09-29
+16:24:57.586 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=MORIN HTTP/1.1
+16:24:58.024 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 438ms
+Iteration 2
+16:24:58.024 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=SMITH HTTP/1.1
+16:24:58.777 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 753ms
+Alexander Smith
+Darcy Smith 1992-10-21T01:08:53.379Z
+Darcy Smith 1992-10-21T01:08:53.383Z
+Darcy Smith 1992-10-21T01:08:53.425Z
+Darcy Smith 1992-10-21T01:09:14.992Z
+Darcy Smith 1992-10-21T01:09:14.999Z
+Darcy Smith 1992-10-21T01:09:15.028Z
+Darcy Smith 1992-10-21T01:09:21.099Z
+Darcy Smith 1992-10-21T01:09:21.102Z
+Darcy Smith 1992-10-21T01:09:21.118Z
+John Smith
+John Smith
+John Smith
+John Smith
+John Smith 2001-02-20
+John\ Smith 1970-01-01
+John\ Smith 1970-01-01
+Maia Smith 2020-10-14
+Peggy Smith 2020-11-05
+jack smith 2000-11-11
+16:24:58.855 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=JONES HTTP/1.1
+16:24:59.621 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 766ms
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+16:24:59.652 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=BROWN HTTP/1.1
+16:25:00.246 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 594ms
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Asher Brown 2021-01-24
+Caitlin Brown 2020-10-23
+Daniel Brown 2000-12-01
+Hunter Brown 2020-11-03
+JamesJr Brown-Smith 1965-09-01
+Marcus Brown 1984-10-29
+Max Brown 2020-11-02
+Rasheeda241 Brown30 1980-02-13
+16:25:00.292 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=TREMBLAY HTTP/1.1
+16:25:00.543 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 251ms
+Barton704 Tremblay80 1928-11-22
+Barton704 Tremblay80 1929-01-31
+Bessie423 Shanahan202 1949-12-18
+Doloris378 Tremblay80 1948-10-09
+Loriann967 Tremblay80 2008-07-18
+Mickey576 Tremblay80 1934-05-08
+Wilson960 Tremblay80 1972-01-15
+16:25:00.589 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=MARTIN HTTP/1.1
+16:25:01.246 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 657ms
+Alejandra902 Martínez540 1995-05-17
+Aria Martin 2020-05-28
+Beau Martin 2020-05-30
+Charles Martin 2020-06-01
+Gonzalo Martínez 1991-06-20
+Jasmine Martin 2020-11-17
+Lachlan Martin 2000-05-30
+Martín25 Martínez540 1948-06-10
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Serena Martin
+Thea Martin 2020-11-23
+kavin Martin 2020-02-02
+16:25:01.292 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=ROY HTTP/1.1
+16:25:02.102 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 810ms
+Esteban536 Roybal79 1946-01-25
+Geofssf Roy 1995-05-12
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+16:25:02.161 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=GAGNON HTTP/1.1
+16:25:02.216 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 55ms
+16:25:02.218 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=LEE HTTP/1.1
+16:25:02.604 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 385ms
+Aiden Lee 2020-10-28
+Caleb Lee 1993-12-14
+Dong Goo Lee 1938-12-02
+Elijah Lee 2020-05-19
+Fletcher Lee 2000-06-01
+Ivy Leejo 2021-01-25
+Jacqueline Lee 1947-01-21
+Layla Lee 2020-11-18
+Li-Hui Lee 2003-05-01
+Phil Lee
+Phil Lee
+Phil Lee
+Phil Lee 1990-01-01
+Phil Lee 1990-01-01
+Phil Lee 1990-01-01
+Piper Lee 2020-11-20
+Sienna Lee 2013-10-22
+Ted Lee 1932-05-07
+Theo Lee 2020-10-13
+kevin lee
+16:25:02.636 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=WILSON HTTP/1.1
+16:25:03.418 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 782ms
+Alan Wilson
+Brian Wilson
+Cameron Wilson
+Carl Wilson
+Elizabeth Wilson 1978-11-13
+Elliott Wilson
+Howard Wilson
+Jacque Wilson 1990-01-01
+Jacque Wilson 1990-01-01
+Jesse Wilson 1940-07-01
+Joseph Wilson
+Maia Wilson 2020-10-29
+Michael Wilson 2020-05-22
+Perkins Wilson
+Peter Wilsontest 1955-03-01
+Ryder Wilson 2020-01-06
+Sam Wilson
+Victoria Wilson
+William Wilson
+Wilson Wilson
+16:25:03.449 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=JOHNSON HTTP/1.1
+16:25:03.903 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 454ms
+Jack Johnson 2020-12-10
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+16:25:03.949 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=MACDONALD HTTP/1.1
+16:25:04.870 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 921ms
+Adam MacDonald
+Adrian MacDonald
+Brandon MacDonald
+Brian MacDonald
+Colin MacDonald
+Connor MacDonald
+Gavin MacDonald
+Gordon MacDonald
+Ian MacDonald
+John MacDonald
+Keith MacDonald
+Lisa MacDonald
+Michael MacDonald
+Nathan MacDonald
+Owen MacDonald
+Peter MacDonald
+Piers MacDonald
+Simon MacDonald
+Tim MacDonald
+Wendy MacDonald
+16:25:04.923 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=TAYLOR HTTP/1.1
+16:25:05.514 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 590ms
+Adam Taylor
+Adrian Taylor
+Alexander Taylor
+Beau Taylor 2020-10-31
+Boris Taylor
+Brandon Taylor
+Caitlin Taylor 2020-06-07
+Daniel Taylor 1980-08-03
+Edna Taylor 1961-02-03
+Hudson Taylor 2020-06-16
+Isaac Taylor
+Jordan Taylor 2020-11-30
+Kevin Taylor
+Mark Taylor
+Mark Taylor
+Mark Taylor
+Piers Taylor
+Sebastian Taylor
+Theodore Taylor 2020-06-13
+Zara Taylor 2020-10-20
+16:25:05.545 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=CAMPBELL HTTP/1.1
+16:25:06.427 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 882ms
+Adam Campbell
+Boris Campbell
+Christopher Campbell
+Eric Campbell
+Frank Campbell
+Gavin Campbell
+Jake Campbell
+Jonathan Campbell
+Joseph Campbell
+Julian Campbell
+Justin Campbell
+Lucas Campbell
+Nathan Campbell
+Neil Campbell
+Nicholas Campbell
+Oliver Campbell
+Stephen Campbell
+Steven Campbell
+Stewart Campbell
+William Campbell
+16:25:06.459 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=ANDERSON HTTP/1.1
+16:25:06.693 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 234ms
+Alex Anderson
+Alex Anderson
+Amy Anderson 1923-12-01
+Babara869 Anderson154 1953-02-19
+Daniel Anderson 2020-12-18
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+Eden Anderson 2020-10-12
+Edward Anderson 2020-12-17
+Hunter Anderson 2020-12-11
+Jacob Anderson 2020-10-22
+James Anderson 2001-12-25
+JasmineWvh6pm AndersonWvh6pm 1989-12-23
+Kate Anderson 1975-12-25
+Michael Anderson 2010-09-25
+Xavier Anderson 2020-11-18
+16:25:06.740 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=LEBLANC HTTP/1.1
+16:25:06.802 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 62ms
+16:25:06.802 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=COTE HTTP/1.1
+16:25:06.849 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 47ms
+16:25:06.849 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=WILLIAMS HTTP/1.1
+16:25:07.162 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 313ms
+Alexis Williams 2021-01-18
+Ashton Williams 2020-10-27
+Carl Williams 2004-04-14
+Clive Williams 1954-08-08
+Dorine689 Schowalter414 1941-11-07
+Ella Williams 2020-06-09
+Ethan Williams 2020-07-28
+Ezra Williams 2020-07-22
+Fred Williamson 1954-01-01
+Harrison Williams 2020-07-08
+JOHN WILLIAMS 1973-06-17
+Jackson Williams 2000-06-09
+John Williams 1982-10-31
+Kimberlie352 Williamson769 1951-08-13
+Kimberlie352 Williamson769 1951-08-13
+Liliane Williams 1945-12-09
+Mila Williams 2020-10-14
+Modesta635 Denesik803 1970-02-19
+Oliver Williams 2018-08-05
+Suzy993 Barrows492 1955-04-17
+16:25:07.177 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=MILLER HTTP/1.1
+16:25:07.528 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 351ms
+Dollie671 Pagac496 1979-10-18
+Gerda633 Miller503 1946-09-01
+Gerda633 Miller503 1946-11-09
+Hudson Dylan
+Kylee806 Miller503 1992-01-13
+Lindsay Miller 1993-10-31
+Lynelle567 Crona259 1973-12-27
+Maria750 Miller503 1982-10-21
+Maria750 Miller503 1982-12-30
+Nancy265 Miller503 1960-04-10
+Nancy265 Smitham825 1990-01-23
+Newton741 Miller503 1921-04-29
+Newton741 Miller503 1921-07-08
+Peter Chalmers 1974-12-25
+Ruby Miller 1937-05-01
+Samuel Miller
+Samuel Miller
+Shayne60 Miller503 1965-06-29
+Tammy740 Miller503 1996-10-22
+[FILTERED] [FILTERED] 1920-06-28
+16:25:07.564 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=THOMPSON HTTP/1.1
+16:25:08.083 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 517ms
+Archie Thompson 2020-05-28
+Aria Thompson 2020-06-08
+Beckie79 Kirlin939 1983-07-27
+Blair Thompson 1994-08-31
+Candis134 Thompson596 1963-04-12
+Dillon Thompson
+Dillon Thompson
+Geri861 Thompson596 1946-12-13
+Gregory545 Thompson596 1987-02-23
+Harry Thompson 2020-10-13
+Henry Thompson 1956-09-01
+Lea264 Sporer811 1946-08-19
+Patrick Thompson 2020-06-02
+Peter Chalmers 1974-12-25
+Ronnie7 Thompson596 1968-01-22
+Rudolph554 Thompson596 1964-02-03
+Samuel Thompson 2020-05-28
+Tempie784 Lynch190 1978-11-27
+Toney527 Thompson596 2007-07-26
+Zara Thompson 2000-05-30
+16:25:08.120 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=GAUTHIER HTTP/1.1
+16:25:08.252 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 131ms
+16:25:08.260 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=WHITE HTTP/1.1
+16:25:08.618 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 358ms
+Alex White 1978-08-23
+Archer White 2001-06-05
+Codi873 White193 1989-07-07
+Codi873 White193 1989-09-15
+Concetta811 White193 1950-04-23
+Debra White 1981-01-26
+Dylan White 2020-11-29
+George White 2020-06-06
+Gonzalo160 White193 1956-12-20
+Gonzalo160 White193 1957-02-28
+Hudson White 2021-01-22
+Johanne551 White193 2000-12-14
+Johanne551 White193 2001-02-22
+Levi White 2020-10-20
+Luca White 1985-09-15
+Lucy White 2020-12-10
+Stella White 1920-06-03
+Thao506 White193 1909-10-12
+Walter White 2226-10-24
+dunght White 2019-09-29
+16:25:08.696 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=MORIN HTTP/1.1
+16:25:08.805 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 109ms
+Iteration 3
+16:25:08.805 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=SMITH HTTP/1.1
+16:25:10.215 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1410ms
+Alexander Smith
+Darcy Smith 1992-10-21T01:08:53.379Z
+Darcy Smith 1992-10-21T01:08:53.383Z
+Darcy Smith 1992-10-21T01:08:53.425Z
+Darcy Smith 1992-10-21T01:09:14.992Z
+Darcy Smith 1992-10-21T01:09:14.999Z
+Darcy Smith 1992-10-21T01:09:15.028Z
+Darcy Smith 1992-10-21T01:09:21.099Z
+Darcy Smith 1992-10-21T01:09:21.102Z
+Darcy Smith 1992-10-21T01:09:21.118Z
+John Smith
+John Smith
+John Smith
+John Smith
+John Smith 2001-02-20
+John\ Smith 1970-01-01
+John\ Smith 1970-01-01
+Maia Smith 2020-10-14
+Peggy Smith 2020-11-05
+jack smith 2000-11-11
+16:25:10.237 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=JONES HTTP/1.1
+16:25:11.348 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1111ms
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+John Jones
+16:25:11.364 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=BROWN HTTP/1.1
+16:25:12.703 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1339ms
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Amy Brown
+Asher Brown 2021-01-24
+Caitlin Brown 2020-10-23
+Daniel Brown 2000-12-01
+Hunter Brown 2020-11-03
+JamesJr Brown-Smith 1965-09-01
+Marcus Brown 1984-10-29
+Max Brown 2020-11-02
+Rasheeda241 Brown30 1980-02-13
+16:25:12.730 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=TREMBLAY HTTP/1.1
+16:25:13.471 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 740ms
+Barton704 Tremblay80 1928-11-22
+Barton704 Tremblay80 1929-01-31
+Bessie423 Shanahan202 1949-12-18
+Doloris378 Tremblay80 1948-10-09
+Loriann967 Tremblay80 2008-07-18
+Mickey576 Tremblay80 1934-05-08
+Wilson960 Tremblay80 1972-01-15
+16:25:13.471 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=MARTIN HTTP/1.1
+16:25:14.944 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1458ms
+Alejandra902 Martínez540 1995-05-17
+Aria Martin 2020-05-28
+Beau Martin 2020-05-30
+Charles Martin 2020-06-01
+Gonzalo Martínez 1991-06-20
+Jasmine Martin 2020-11-17
+Lachlan Martin 2000-05-30
+Martín25 Martínez540 1948-06-10
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Pedro Martinez 1979-08-09
+Serena Martin
+Thea Martin 2020-11-23
+kavin Martin 2020-02-02
+16:25:14.990 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=ROY HTTP/1.1
+16:25:16.583 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1593ms
+Esteban536 Roybal79 1946-01-25
+Geofssf Roy 1995-05-12
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+Tina Roy 2001-10-10
+16:25:16.629 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=GAGNON HTTP/1.1
+16:25:17.051 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 422ms
+16:25:17.051 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=LEE HTTP/1.1
+16:25:18.074 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1023ms
+Aiden Lee 2020-10-28
+Caleb Lee 1993-12-14
+Dong Goo Lee 1938-12-02
+Elijah Lee 2020-05-19
+Fletcher Lee 2000-06-01
+Ivy Leejo 2021-01-25
+Jacqueline Lee 1947-01-21
+Layla Lee 2020-11-18
+Li-Hui Lee 2003-05-01
+Phil Lee
+Phil Lee
+Phil Lee
+Phil Lee 1990-01-01
+Phil Lee 1990-01-01
+Phil Lee 1990-01-01
+Piper Lee 2020-11-20
+Sienna Lee 2013-10-22
+Ted Lee 1932-05-07
+Theo Lee 2020-10-13
+kevin lee
+16:25:18.105 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=WILSON HTTP/1.1
+16:25:19.695 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1590ms
+Alan Wilson
+Brian Wilson
+Cameron Wilson
+Carl Wilson
+Elizabeth Wilson 1978-11-13
+Elliott Wilson
+Howard Wilson
+Jacque Wilson 1990-01-01
+Jacque Wilson 1990-01-01
+Jesse Wilson 1940-07-01
+Joseph Wilson
+Maia Wilson 2020-10-29
+Michael Wilson 2020-05-22
+Perkins Wilson
+Peter Wilsontest 1955-03-01
+Ryder Wilson 2020-01-06
+Sam Wilson
+Victoria Wilson
+William Wilson
+Wilson Wilson
+16:25:19.726 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=JOHNSON HTTP/1.1
+16:25:22.841 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 3115ms
+Jack Johnson 2020-12-10
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+Robert Johnson
+16:25:22.873 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=MACDONALD HTTP/1.1
+16:25:24.301 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1428ms
+Adam MacDonald
+Adrian MacDonald
+Brandon MacDonald
+Brian MacDonald
+Colin MacDonald
+Connor MacDonald
+Gavin MacDonald
+Gordon MacDonald
+Ian MacDonald
+John MacDonald
+Keith MacDonald
+Lisa MacDonald
+Michael MacDonald
+Nathan MacDonald
+Owen MacDonald
+Peter MacDonald
+Piers MacDonald
+Simon MacDonald
+Tim MacDonald
+Wendy MacDonald
+16:25:24.324 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=TAYLOR HTTP/1.1
+16:25:25.326 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1001ms
+Adam Taylor
+Adrian Taylor
+Alexander Taylor
+Beau Taylor 2020-10-31
+Boris Taylor
+Brandon Taylor
+Caitlin Taylor 2020-06-07
+Daniel Taylor 1980-08-03
+Edna Taylor 1961-02-03
+Hudson Taylor 2020-06-16
+Isaac Taylor
+Jordan Taylor 2020-11-30
+Kevin Taylor
+Mark Taylor
+Mark Taylor
+Mark Taylor
+Piers Taylor
+Sebastian Taylor
+Theodore Taylor 2020-06-13
+Zara Taylor 2020-10-20
+16:25:25.419 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=CAMPBELL HTTP/1.1
+16:25:26.675 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1256ms
+Adam Campbell
+Boris Campbell
+Christopher Campbell
+Eric Campbell
+Frank Campbell
+Gavin Campbell
+Jake Campbell
+Jonathan Campbell
+Joseph Campbell
+Julian Campbell
+Justin Campbell
+Lucas Campbell
+Nathan Campbell
+Neil Campbell
+Nicholas Campbell
+Oliver Campbell
+Stephen Campbell
+Steven Campbell
+Stewart Campbell
+William Campbell
+16:25:26.706 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=ANDERSON HTTP/1.1
+16:25:27.225 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 519ms
+Alex Anderson
+Alex Anderson
+Amy Anderson 1923-12-01
+Babara869 Anderson154 1953-02-19
+Daniel Anderson 2020-12-18
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+David Anderson 1955-01-04
+Eden Anderson 2020-10-12
+Edward Anderson 2020-12-17
+Hunter Anderson 2020-12-11
+Jacob Anderson 2020-10-22
+James Anderson 2001-12-25
+JasmineWvh6pm AndersonWvh6pm 1989-12-23
+Kate Anderson 1975-12-25
+Michael Anderson 2010-09-25
+Xavier Anderson 2020-11-18
+16:25:27.272 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=LEBLANC HTTP/1.1
+16:25:27.642 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 370ms
+16:25:27.644 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=COTE HTTP/1.1
+16:25:28.053 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 407ms
+16:25:28.055 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=WILLIAMS HTTP/1.1
+16:25:28.730 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 674ms
+Alexis Williams 2021-01-18
+Ashton Williams 2020-10-27
+Carl Williams 2004-04-14
+Clive Williams 1954-08-08
+Dorine689 Schowalter414 1941-11-07
+Ella Williams 2020-06-09
+Ethan Williams 2020-07-28
+Ezra Williams 2020-07-22
+Fred Williamson 1954-01-01
+Harrison Williams 2020-07-08
+JOHN WILLIAMS 1973-06-17
+Jackson Williams 2000-06-09
+John Williams 1982-10-31
+Kimberlie352 Williamson769 1951-08-13
+Kimberlie352 Williamson769 1951-08-13
+Liliane Williams 1945-12-09
+Mila Williams 2020-10-14
+Modesta635 Denesik803 1970-02-19
+Oliver Williams 2018-08-05
+Suzy993 Barrows492 1955-04-17
+16:25:28.750 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=MILLER HTTP/1.1
+16:25:29.493 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 742ms
+Dollie671 Pagac496 1979-10-18
+Gerda633 Miller503 1946-09-01
+Gerda633 Miller503 1946-11-09
+Hudson Dylan
+Kylee806 Miller503 1992-01-13
+Lindsay Miller 1993-10-31
+Lynelle567 Crona259 1973-12-27
+Maria750 Miller503 1982-10-21
+Maria750 Miller503 1982-12-30
+Nancy265 Miller503 1960-04-10
+Nancy265 Smitham825 1990-01-23
+Newton741 Miller503 1921-04-29
+Newton741 Miller503 1921-07-08
+Peter Chalmers 1974-12-25
+Ruby Miller 1937-05-01
+Samuel Miller
+Samuel Miller
+Shayne60 Miller503 1965-06-29
+Tammy740 Miller503 1996-10-22
+[FILTERED] [FILTERED] 1920-06-28
+16:25:29.555 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=THOMPSON HTTP/1.1
+16:25:30.587 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 1032ms
+Archie Thompson 2020-05-28
+Aria Thompson 2020-06-08
+Beckie79 Kirlin939 1983-07-27
+Blair Thompson 1994-08-31
+Candis134 Thompson596 1963-04-12
+Dillon Thompson
+Dillon Thompson
+Geri861 Thompson596 1946-12-13
+Gregory545 Thompson596 1987-02-23
+Harry Thompson 2020-10-13
+Henry Thompson 1956-09-01
+Lea264 Sporer811 1946-08-19
+Patrick Thompson 2020-06-02
+Peter Chalmers 1974-12-25
+Ronnie7 Thompson596 1968-01-22
+Rudolph554 Thompson596 1964-02-03
+Samuel Thompson 2020-05-28
+Tempie784 Lynch190 1978-11-27
+Toney527 Thompson596 2007-07-26
+Zara Thompson 2000-05-30
+16:25:30.634 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=GAUTHIER HTTP/1.1
+16:25:31.087 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 453ms
+16:25:31.087 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=WHITE HTTP/1.1
+16:25:31.858 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 771ms
+Alex White 1978-08-23
+Archer White 2001-06-05
+Codi873 White193 1989-07-07
+Codi873 White193 1989-09-15
+Concetta811 White193 1950-04-23
+Debra White 1981-01-26
+Dylan White 2020-11-29
+George White 2020-06-06
+Gonzalo160 White193 1956-12-20
+Gonzalo160 White193 1957-02-28
+Hudson White 2021-01-22
+Johanne551 White193 2000-12-14
+Johanne551 White193 2001-02-22
+Levi White 2020-10-20
+Luca White 1985-09-15
+Lucy White 2020-12-10
+Stella White 1920-06-03
+Thao506 White193 1909-10-12
+Walter White 2226-10-24
+dunght White 2019-09-29
+16:25:31.893 INFO  c.u.f.r.c.i.LoggingInterceptor - Client request: GET http://hapi.fhir.org/baseR4/Patient?family=MORIN HTTP/1.1
+16:25:32.458 INFO  c.u.f.r.c.i.LoggingInterceptor - Client response: HTTP 200 OK in 565ms
+Run time for iteration 1 is 26026ms
+Run time for iteration 2 is 10781ms
+Run time for iteration 3 is 23657ms
+Process Completed!
+
+Process finished with exit code 0
