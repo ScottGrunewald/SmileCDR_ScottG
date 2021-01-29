@@ -4,6 +4,7 @@ import ca.uhn.fhir.rest.api.CacheControlDirective;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
 import ca.uhn.fhir.util.StopWatch;
 import ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor;
+import ca.uhn.fhir.rest.client.exceptions.FhirClientConnectionException;
 //import org.hl7.fhir.r4.formats.JsonParser;
 import org.hl7.fhir.r4.model.Bundle;
 import org.hl7.fhir.r4.model.Patient;
@@ -69,69 +70,79 @@ public class SampleClient {
                 // Instantiate our Bundle - request will be run below
                 Bundle response;
 
-                // Run iterations 1 and 2 with normal caching
-                if(z==1 || z==2) {
-                    // Search for Patient resources
-                    response = client
-                            .search()
-                            .forResource("Patient")
-                            .where(Patient.FAMILY.matches().value(lastName))
-                            .returnBundle(Bundle.class)
-                            .execute();
+                // Instantiate our response list
+                List<Bundle.BundleEntryComponent> ourResponses;
+
+                try {
+
+                    // Run iterations 1 and 2 with normal caching
+                    if (z == 1 || z == 2) {
+                        // Search for Patient resources
+                        response = client
+                                .search()
+                                .forResource("Patient")
+                                .where(Patient.FAMILY.matches().value(lastName))
+                                .returnBundle(Bundle.class)
+                                .execute();
+                    }
+                    // Run iteration 3 with no caching
+                    else {
+                        // Create our CacheControlDirective object for the cache control header
+                        CacheControlDirective ourCC = new CacheControlDirective();
+                        // Set the no-cache value to true so the cache is not accessed
+                        ourCC.setNoCache(true);
+
+                        // Search for Patient resources without caching
+                        response = client
+                                .search()
+                                .forResource("Patient")
+                                .cacheControl(ourCC)
+                                .where(Patient.FAMILY.matches().value(lastName))
+                                .returnBundle(Bundle.class)
+                                .execute();
+
+                    }
+
+                    // Break down the Bundle into response list
+                    ourResponses = new ArrayList<>(response.getEntry());
+
+                    // Create list of Strings to hold the patient information
+                    ArrayList<String> ourPatients = new ArrayList<>();
+
+                    // Transfer the responses to Strings for parsing
+                    for (Bundle.BundleEntryComponent ourResponse : ourResponses) {
+                        String string = fhirContext.newJsonParser().setPrettyPrint(true).encodeResourceToString(ourResponse.getResource());
+                        StringBuilder patientInfo = new StringBuilder();
+
+                        // Find the value of given name
+                        if (string.contains("given")) {
+                            patientInfo.append(string.substring(string.indexOf("given") + 19, string.indexOf("\"", string.indexOf("given") + 19)));
+                        }
+
+                        // Find the value of last name
+                        patientInfo.append(" " + string.substring(string.indexOf("family") + 10, string.indexOf("\"", string.indexOf("family") + 10)));
+
+                        // Find the value of birthDate
+                        if (string.contains("birthDate")) {
+                            patientInfo.append(" " + string.substring(string.indexOf("birthDate") + 13, string.indexOf("\"", string.indexOf("birthDate") + 13)));
+                        }
+
+                        // Add the new string to the list of strings to be printed
+                        ourPatients.add(patientInfo.toString());
+                    }
+
+                    // Sort the list of strings alphabetically (lexical sort - "Z" comes before "a")
+                    Collections.sort(ourPatients);
+
+                    // Print out our list of patient names and birth dates
+                    for (String ourPatient : ourPatients) {
+                        System.out.println(ourPatient);
+                    }
+
                 }
-                // Run iteration 3 with no caching
-                else
+                catch (FhirClientConnectionException e)
                 {
-                    // Create our CacheControlDirective object for the cache control header
-                    CacheControlDirective ourCC = new CacheControlDirective();
-                    // Set the no-cache value to true so the cache is not accessed
-                    ourCC.setNoCache(true);
-
-                    // Search for Patient resources without caching
-                    response = client
-                            .search()
-                            .forResource("Patient")
-                            .cacheControl(ourCC)
-                            .where(Patient.FAMILY.matches().value(lastName))
-                            .returnBundle(Bundle.class)
-                            .execute();
-
-                }
-
-                // Break down the Bundle into response list
-                List<Bundle.BundleEntryComponent> ourResponses = new ArrayList<>(response.getEntry());
-
-                // Create list of Strings to hold the patient information
-                ArrayList<String> ourPatients = new ArrayList<>();
-
-                // Transfer the responses to Strings for parsing
-                for (Bundle.BundleEntryComponent ourResponse : ourResponses) {
-                    String string = fhirContext.newJsonParser().setPrettyPrint(true).encodeResourceToString(ourResponse.getResource());
-                    StringBuilder patientInfo = new StringBuilder();
-
-                    // Find the value of given name
-                    if (string.contains("given")) {
-                        patientInfo.append(string.substring(string.indexOf("given") + 19, string.indexOf("\"", string.indexOf("given") + 19)));
-                    }
-
-                    // Find the value of last name
-                    patientInfo.append(" " + string.substring(string.indexOf("family") + 10, string.indexOf("\"", string.indexOf("family") + 10)));
-
-                    // Find the value of birthDate
-                    if (string.contains("birthDate")) {
-                        patientInfo.append(" " + string.substring(string.indexOf("birthDate") + 13, string.indexOf("\"", string.indexOf("birthDate") + 13)));
-                    }
-
-                    // Add the new string to the list of strings to be printed
-                    ourPatients.add(patientInfo.toString());
-                }
-
-                // Sort the list of strings alphabetically (lexical sort - "Z" comes before "a")
-                Collections.sort(ourPatients);
-
-                // Print out our list of patient names and birth dates
-                for (String ourPatient : ourPatients) {
-                    System.out.println(ourPatient);
+                    e.printStackTrace();
                 }
             }
             // Stop the stopwatch
