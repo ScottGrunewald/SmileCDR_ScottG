@@ -1,0 +1,6 @@
+Code for SmileCDR coding challenge!
+
+1. Unit Test document is SmileCDR_Unit_Test_20210129.xlsx
+2. Supporting logfiles are RunLog.txt and RunLogError.txt
+3. File containing last names for search is lastnames.txt 
+	- path in code is currently hardcoded to C:\Datafiles\lastnames.txt
